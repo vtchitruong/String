@@ -5,8 +5,11 @@ using namespace std;
 
 int main()
 {
-    vector<string> can = {"Canh", "Tan", "Nham", "Quy", "Giap", "At", "Binh", "Dinh", "Mau", "Ky"}; // heavenly stems
-    vector<string> chi = {"Than", "Dau", "Tuat", "Hoi", "Ti", "Suu", "Dan", "Mao", "Thin", "Ty", "Ngo", "Mui"}; // earthly branches
+    // heavenly stems
+    vector<string> can = {"Canh", "Tân", "Nhâm", "Quý", "Giáp", "Ất", "Bính", "Đinh", "Mậu", "Kỷ"};
+
+    // earthly branches
+    vector<string> chi = {"Thân", "Dậu", "Tuất", "Hợi", "Tí", "Sửu", "Dần", "Mão", "Thìn", "Tỵ", "Ngọ", "Mùi"};
 
     vector<string> branch = {"Monkey", "Rooster", "Dog", "Pig", "Rat", "Ox", "Tiger", "Rabbit", "Dragon", "Snake", "Horse", "Goat"};
 
@@ -17,7 +20,7 @@ int main()
     string vn = can[y % 10] + ' ' + chi[y % 12]; // Vietnamese
     string en = branch[y % 12]; // English
 
-    cout << "Nam " << vn << endl;
+    cout << "Năm " << vn << endl;
     cout << "The year of " << en;
 
     return 0;
